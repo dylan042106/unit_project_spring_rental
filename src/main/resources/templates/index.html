@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/styles_index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Welcome to Rental Service</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="customer: ${customers}">
+                <td th:text="${customer.name}"></td>
+                <td th:text="${customer.age}"></td>
+                <td><img src="img/pirate.jpg" width="100" th:src="@{img/pirate.jpg}"/></td>
+            </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/next}">Next Page</a>
+
+</body>
+</html>
