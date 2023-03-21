@@ -1,4 +1,4 @@
-package com.unitproject.Unit.Project.Spring.controllers;
+package com.unitproject.Unit.Project.Spring.Base;
 
 import com.unitproject.Unit.Project.Spring.models.Customer;
 import com.unitproject.Unit.Project.Spring.repositories.CustomerRepository;
@@ -13,17 +13,18 @@ import java.util.List;
 
 @Controller
 public class ApplicationController {
-    @Autowired
-    private CustomerRepository cRepo;
     @GetMapping("/index")
-    public ModelAndView showCustomers(){
-        ModelAndView mav = new ModelAndView("index");
-        List<Customer> list = cRepo.findAll();
-        mav.addObject("customers", list);
-        return mav;
+    public String homePage(){
+        return "index";
     }
-    @RequestMapping("/next")
-    public String next(){
-        return "next";
+
+    @GetMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    @GetMapping("/logout")
+    public String logout(){
+        return "login";
     }
 }
