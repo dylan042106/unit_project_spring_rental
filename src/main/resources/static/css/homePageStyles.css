@@ -1,0 +1,48 @@
+nav {
+    height: 6rem;
+}
+.navbar-custom {
+    background-color: black;
+}
+
+#navbarNavAltMarkup {
+    flex-grow: 0;
+    margin-right: 5rem;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: gray;
+}
+
+a.navbar-brand {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+div.homepage_image {
+    width: 100vw;
+    height: 450px;
+    background-image: url("/img/homepage_background.jpeg");
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+h1.under_image {
+  font-family: "RlFreight", serif;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 5.5rem;
+}
+
+div.vehicle_type_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}

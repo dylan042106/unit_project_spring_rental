@@ -2,28 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="/css/styles_index.css" rel="stylesheet" type="text/css">
+    <title>Royal Rentals Car Service</title>
+    <link type="text/css" rel="stylesheet" href="/css/stylesPreIndex.css">
 </head>
 <body>
-    <h1>Welcome to Rental Service</h1>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="customer: ${customers}">
-                <td th:text="${customer.name}"></td>
-                <td th:text="${customer.age}"></td>
-                <td><img src="img/pirate.jpg" width="100" th:src="@{img/pirate.jpg}"/></td>
-            </tr>
-        </tbody>
-    </table>
-    <a th:href="@{/login}">Next Page</a>
-
+    <h1>Welcome to Royal Rentals</h1>
+    <a th:href="@{/home}"><button class="button-19" role="button">Get Started!</button></a>
 </body>
 </html>
