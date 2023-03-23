@@ -8,6 +8,11 @@ public class Vehicles {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long vehicle_id;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "type_id", referencedColumnName = "type_id")
+    private VehicleType vehicleType;
+
     private String vehicle_name;
     private String vehicle_model;
     private String vehicle_ppd;
@@ -58,5 +63,12 @@ public class Vehicles {
 
     public void setVehicle_ppd(String vehicle_ppd) {
         this.vehicle_ppd = vehicle_ppd;
+    }
+
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
+    public void assignToType(VehicleType vehicleType) {
+        this.vehicleType = vehicleType;
     }
 }

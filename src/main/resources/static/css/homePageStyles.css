@@ -61,9 +61,10 @@ div.row {
     width: 30%;
     border-style: solid;
     border-width: medium;
-    height: 3rem;
+    height: 11rem;
     align-items: center;
 }
 a.link{
+    padding: 0em;
     text-decoration: none;
 }
