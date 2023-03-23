@@ -23,3 +23,49 @@ a.navbar-brand {
     font-size: 2rem;
     font-weight: 900;
 }
+.head{
+     width: 40%;
+     border-style: solid;
+     border-width: medium;
+     height: 3rem;
+     align-items: center;
+     margin-top: 2rem;
+     margin-left:auto;
+     margin-right:auto;
+     text-align:center;
+     letter-spacing: 5px;
+     padding-top: 0;
+     padding-bottom: 0;
+}
+.mid{
+     width: 30%;
+     border-style: solid;
+     border-width: medium;
+     height: 3rem;
+     align-items: center;
+     margin-left:auto;
+     margin-right:auto;
+     text-align:center;
+     font-family: "RlFreight", serif;
+     font-size: 2rem;
+     text-align: center;
+     font-weight: 600;
+     margin-top: 5.5rem;
+}
+.top{
+    width: 30%;
+    border-style: solid;
+    border-width: medium;
+    height: 3rem;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    }
+.low{
+    font-family: "RlFreight", serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5.5rem;
+}
