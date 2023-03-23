@@ -1,4 +1,4 @@
-package com.unitproject.Unit.Project.Spring.Base;
+package com.unitproject.Unit.Project.Spring.Base.entities;
 
 import jakarta.persistence.*;
 
@@ -10,24 +10,21 @@ public class Vehicles {
     private Long vehicle_id;
     private String vehicle_name;
     private String vehicle_model;
-    private String vehicle_type;
     private String vehicle_ppd;
 
     public Vehicles() {
     }
 
-    public Vehicles(Long vehicle_id, String vehicle_name, String vehicle_model, String vehicle_type, String vehicle_ppd) {
+    public Vehicles(Long vehicle_id, String vehicle_name, String vehicle_model, String vehicle_ppd) {
         this.vehicle_id = vehicle_id;
         this.vehicle_name = vehicle_name;
         this.vehicle_model = vehicle_model;
-        this.vehicle_type = vehicle_type;
         this.vehicle_ppd = vehicle_ppd;
     }
 
-    public Vehicles(String vehicle_name, String vehicle_model, String vehicle_type, String vehicle_ppd) {
+    public Vehicles(String vehicle_name, String vehicle_model, String vehicle_ppd) {
         this.vehicle_name = vehicle_name;
         this.vehicle_model = vehicle_model;
-        this.vehicle_type = vehicle_type;
         this.vehicle_ppd = vehicle_ppd;
     }
 
@@ -53,14 +50,6 @@ public class Vehicles {
 
     public void setVehicle_model(String vehicle_model) {
         this.vehicle_model = vehicle_model;
-    }
-
-    public String getVehicle_type() {
-        return vehicle_type;
-    }
-
-    public void setVehicle_type(String vehicle_type) {
-        this.vehicle_type = vehicle_type;
     }
 
     public String getVehicle_ppd() {

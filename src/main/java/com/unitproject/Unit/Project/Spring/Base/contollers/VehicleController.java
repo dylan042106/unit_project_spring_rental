@@ -1,5 +1,7 @@
-package com.unitproject.Unit.Project.Spring.Base;
+package com.unitproject.Unit.Project.Spring.Base.contollers;
 
+import com.unitproject.Unit.Project.Spring.Base.services.VehicleService;
+import com.unitproject.Unit.Project.Spring.Base.entities.Vehicles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +20,6 @@ public class VehicleController {
     @GetMapping("/")
     public String preHomePage(){
         return "index";
-    }
-    @GetMapping("/home")
-    public String homePage(){
-        return "home";
     }
 
     @GetMapping("/vehicles/all")

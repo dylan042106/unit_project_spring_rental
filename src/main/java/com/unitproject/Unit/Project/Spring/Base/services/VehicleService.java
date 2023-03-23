@@ -1,5 +1,7 @@
-package com.unitproject.Unit.Project.Spring.Base;
+package com.unitproject.Unit.Project.Spring.Base.services;
 
+import com.unitproject.Unit.Project.Spring.Base.entities.Vehicles;
+import com.unitproject.Unit.Project.Spring.Base.repositories.VehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
