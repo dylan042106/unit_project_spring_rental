@@ -52,8 +52,18 @@ div.container {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    gap: 3rem;
 }
 
 div.row {
     width: 30%;
+    border-style: solid;
+    border-width: medium;
+    height: 3rem;
+    align-items: center;
+}
+a.link{
+    text-decoration: none;
 }
