@@ -27,4 +27,5 @@ public class VehicleController {
         List<Vehicles> list = vehicleService.getAllVehicles();
         return new ModelAndView("allVehicles", "vehicles", list);
     }
+
 }
