@@ -16,7 +16,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@RestController
 @Controller
 public class VehicleController {
     @Autowired
@@ -27,7 +26,7 @@ public class VehicleController {
     }
     @GetMapping("/")
     public String preHomePage(){
-        return "index.html";
+        return "index";
     }
 
     @GetMapping("/vehicles/all")
