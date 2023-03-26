@@ -16,6 +16,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// Uncomment Annotation for HTTP REQUESTS
+//@RestController
 @Controller
 public class VehicleController {
     @Autowired
@@ -38,5 +40,11 @@ public class VehicleController {
     @PutMapping("vehicles/{vehicleId}/assign/{type_id}")
     public Vehicles assignToType(@PathVariable("vehicleId") Long vehicle_id, @PathVariable("type_id") Long type_id){
         return vehicleService.assignToType(vehicle_id, type_id);
+    }
+
+    @GetMapping("/vehicles/type/{type_id}")
+    public ModelAndView getCertainVehicleTypes(@PathVariable("type_id") Long type_id){
+        List<Vehicles> list = vehicleService.getCertainType(type_id);
+        return new ModelAndView("TypePage", "vehicles", list);
     }
 }

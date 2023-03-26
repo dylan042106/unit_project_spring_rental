@@ -30,4 +30,8 @@ public class VehicleService {
         vehicles.assignToType(vehicleType);
         return vRepo.save(vehicles);
     }
+
+    public List<Vehicles> getCertainType(Long typeId) {
+        return vRepo.getCertainType(typeId);
+    }
 }
