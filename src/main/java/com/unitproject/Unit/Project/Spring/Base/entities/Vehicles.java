@@ -14,23 +14,29 @@ public class Vehicles {
     private VehicleType vehicleType;
 
     private String vehicle_name;
-    private String vehicle_model;
+    private String vehicle_year;
+    private String mpg;
+    private boolean is_rented = false;
     private String vehicle_ppd;
 
     public Vehicles() {
     }
 
-    public Vehicles(Long vehicle_id, String vehicle_name, String vehicle_model, String vehicle_ppd) {
+    public Vehicles(Long vehicle_id, String vehicle_name, String vehicle_year, String mpg, Boolean is_rented, String vehicle_ppd) {
         this.vehicle_id = vehicle_id;
         this.vehicle_name = vehicle_name;
-        this.vehicle_model = vehicle_model;
         this.vehicle_ppd = vehicle_ppd;
+        this.vehicle_year = vehicle_year;
+        this.mpg = mpg;
+        this.is_rented = is_rented;
     }
 
-    public Vehicles(String vehicle_name, String vehicle_model, String vehicle_ppd) {
+    public Vehicles(String vehicle_name, String vehicle_year, String mpg, Boolean is_rented, String vehicle_ppd) {
         this.vehicle_name = vehicle_name;
-        this.vehicle_model = vehicle_model;
         this.vehicle_ppd = vehicle_ppd;
+        this.vehicle_year = vehicle_year;
+        this.mpg = mpg;
+        this.is_rented = is_rented;
     }
 
     public Long getVehicle_id() {
@@ -49,20 +55,36 @@ public class Vehicles {
         this.vehicle_name = vehicle_name;
     }
 
-    public String getVehicle_model() {
-        return vehicle_model;
-    }
-
-    public void setVehicle_model(String vehicle_model) {
-        this.vehicle_model = vehicle_model;
-    }
-
     public String getVehicle_ppd() {
         return vehicle_ppd;
     }
 
     public void setVehicle_ppd(String vehicle_ppd) {
         this.vehicle_ppd = vehicle_ppd;
+    }
+
+    public String getVehicle_year() {
+        return vehicle_year;
+    }
+
+    public void setVehicle_year(String vehicle_year) {
+        this.vehicle_year = vehicle_year;
+    }
+
+    public String getMpg() {
+        return mpg;
+    }
+
+    public void setMpg(String mpg) {
+        this.mpg = mpg;
+    }
+
+    public boolean isIs_rented() {
+        return is_rented;
+    }
+
+    public void setIs_rented(boolean is_rented) {
+        this.is_rented = is_rented;
     }
 
     public VehicleType getVehicleType() {

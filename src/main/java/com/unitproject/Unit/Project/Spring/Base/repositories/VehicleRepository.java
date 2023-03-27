@@ -10,6 +10,6 @@ import java.util.Optional;
 
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicles, Long> {
-    @Query(value = "SELECT * FROM vehicles v WHERE v.type_id = :type_id", nativeQuery = true)
+    @Query(value = "SELECT * FROM vehicles v WHERE v.type_id = :type_id AND v.is_rented = 'f'", nativeQuery = true)
     List<Vehicles> getCertainType(Long type_id);
 }

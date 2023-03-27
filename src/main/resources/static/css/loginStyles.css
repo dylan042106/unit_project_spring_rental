@@ -23,24 +23,9 @@ a.navbar-brand {
     font-size: 2rem;
     font-weight: 900;
 }
-
-h1.type_text_top {
-    font-size: 4.5rem;
+h1.top_text {
+    font-size: 4rem;
     font-weight: 900;
     margin-top: 3rem;
     text-align: center;
-}
-
-table.table{
-    width: 80%;
-    margin: auto;
-    margin-top: 2rem;
-}
-
-a.link {
-    text-decoration: none;
-    color: black;
-}
-a.link:hover{
-    color: gray;
 }

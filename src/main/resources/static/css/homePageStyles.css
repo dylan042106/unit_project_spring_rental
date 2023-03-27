@@ -27,7 +27,7 @@ a.navbar-brand {
 div.homepage_image {
     width: 100vw;
     height: 450px;
-    background-image: url("/img/homepage_background.jpeg");
+    background-image: url("/img/BMW I8.jpeg");
     background-repeat: no repeat;
     background-size: cover;
 }
@@ -59,12 +59,15 @@ div.container {
 
 div.row {
     width: 30%;
-    border-style: solid;
-    border-width: medium;
+    background-color: #d9d9d9;
     height: 11rem;
     align-items: center;
 }
 a.link{
     padding: 0em;
     text-decoration: none;
+    color: black;
+}
+a.link:hover{
+    color: gray;
 }

@@ -18,4 +18,8 @@ public class TypeServices {
     public List<VehicleType> getAllTypes() {
         return tRepo.findAll();
     }
+
+    public VehicleType getType(Long typeId) {
+        return tRepo.findById(typeId).get();
+    }
 }

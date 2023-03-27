@@ -1,0 +1,21 @@
+for images {
+    name = vehicleName
+    width: 2000
+    height: 1000
+}
+
+//sql inserts\\
+{
+    {
+        name = Toyota Camry,
+        year = 2018
+        mpg = 34
+        type = Sedan
+    }
+    {
+        name = BMW 4 Series
+        year = 2018
+        pmg = 24
+        type = Sports
+    }
+}

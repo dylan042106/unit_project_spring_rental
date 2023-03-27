@@ -17,6 +17,7 @@
               <div class="navbar-nav">
                   <a class="nav-link" th:href="@{/vehicles/all}">All Vehicles</a>
                   <a class="nav-link" href="#">Wishlist</a>
+                  <a class="nav-link" th:href="@{/login}">Login</a>
               </div>
           </div>
       </div>
@@ -26,7 +27,7 @@
       <h1 class="under_image">Find Your Next Ride On Royal Rentals Now!</h1>
   </div>
   <div class="container text-center">
-      <div class="row" th:each="t : ${types}">
+      <div class="row" th:each="t : ${model.types}">
           <a class="link" th:href="@{vehicles/type/{type}(type=${t.type_id})}">
               <div class="type_containers">
                   <span th:text="${t.type_name}"></span>

@@ -24,18 +24,10 @@ a.navbar-brand {
     font-weight: 900;
 }
 .head{
-     width: 40%;
-     border-style: solid;
-     border-width: medium;
-     height: 3rem;
-     align-items: center;
-     margin-top: 2rem;
-     margin-left:auto;
-     margin-right:auto;
-     text-align:center;
-     letter-spacing: 5px;
-     padding-top: 0;
-     padding-bottom: 0;
+     font-size: 4.5rem;
+     font-weight: 900;
+     margin-top: 3rem;
+     text-align: center;
 }
 .mid{
      width: 30%;
@@ -53,7 +45,7 @@ a.navbar-brand {
      margin-top: 5.5rem;
 }
 .top{
-    width: 30%;
+    width: 60%;
     border-style: solid;
     border-width: medium;
     height: 3rem;
@@ -68,4 +60,19 @@ a.navbar-brand {
     text-align: center;
     font-weight: 600;
     margin-top: 5.5rem;
+}
+
+a.link {
+    text-decoration: none;
+    color: black;
+}
+
+a.link:hover {
+    color: gray;
+}
+
+table.table{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
 }
