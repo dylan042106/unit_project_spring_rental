@@ -1,0 +1,31 @@
+nav {
+    height: 6rem;
+}
+.navbar-custom {
+    background-color: black;
+}
+
+#navbarNavAltMarkup {
+    flex-grow: 0;
+    margin-right: 5rem;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: gray;
+}
+
+a.navbar-brand {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+h1.top_text {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 3rem;
+    text-align: center;
+}

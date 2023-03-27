@@ -7,15 +7,13 @@ import com.unitproject.Unit.Project.Spring.Base.services.VehicleService;
 import com.unitproject.Unit.Project.Spring.Base.entities.Vehicles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.*;
 
 // Uncomment Annotation for HTTP REQUESTS
-//@RestController
+//@Rest Controller
 @Controller
 public class VehicleController {
     @Autowired
@@ -75,5 +73,16 @@ public class VehicleController {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("/login");
         return mav;
+    }
+    @GetMapping("admin/vehicles/all")
+    public ModelAndView adminEdit(){
+        List<Vehicles> list = vehicleService.getAllVehicles();
+        return new ModelAndView("adminPage", "vehicles", list);
+    }
+
+    @RequestMapping("/delete/{id}")
+    public String delete(@PathVariable("id") Long vehicleId){
+        vehicleService.deleteById(vehicleId);
+        return "redirect:/admin/vehicles/all";
     }
 }

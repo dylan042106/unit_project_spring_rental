@@ -5,8 +5,7 @@ import com.unitproject.Unit.Project.Spring.Base.services.CustomerService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Objects;
@@ -38,5 +37,23 @@ public class CustomerController {
             }
         }
         return vehicleController.login();
+    }
+
+    @GetMapping("/register")
+    public String registerPage(){
+        return "register";
+    }
+
+    @RequestMapping(path = "/save", method=RequestMethod.POST)
+    public String registerCustomer(HttpServletRequest request){
+        Customer c = new Customer();
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+        c.setCust_name(name);
+        c.setCust_email(email);
+        c.setCust_password(password);
+        customerService.save(c);
+        return "redirect:/home";
     }
 }

@@ -39,4 +39,8 @@ public class VehicleService {
     public Optional<Vehicles> getOneVehicle(Long vehicleId) {
         return vRepo.findById(vehicleId);
     }
+
+    public void deleteById(Long vehicleId) {
+        vRepo.deleteById(vehicleId);
+    }
 }
